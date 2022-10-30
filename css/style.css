@@ -74,13 +74,11 @@ a:hover {
 .header-wrap {
     background: url("../img/bg-head.jpg") top center no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 .header-wrap-color {
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
-    padding: 6.4vh 0 0 0;
-    height: 100vh;
+    padding: 18px 0 187px 0;
 }
 
 .header-top {
@@ -116,21 +114,21 @@ a:hover {
 .header-content {
     text-align: center;
     color: white;
-    margin-top: 18vh;
+    margin-top: 229px;
 }
 
 .header-content h1 {
     font-weight: 700;
     font-size: 4.5rem;
     text-transform: uppercase;
-    margin-bottom: 5.1vh;
+    margin-bottom: 40px;
 }
 
 .header-content h2 {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 150%;
-    margin-bottom: 7.7vh;
+    margin-bottom: 60px;
 }
 
 .white-btn {
@@ -394,4 +392,132 @@ a:hover {
     font-size: 1.125rem;
     line-height: 1.375rem;
     margin-bottom: 19px;
+}
+
+@media (max-width:800px) {
+    .header-content {
+        margin-top: 50px;
+    }
+    
+    .header-top {
+        flex-direction: column;
+    }
+
+    .header-top-logo {
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .header-top-menu {
+        order: 3;
+    }
+
+    .header-top-button {
+        order: 2;
+        align-self: flex-end;
+        margin: -23px 0 50px 0;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu li {
+        margin-bottom: 15px;
+
+    }
+
+    .about-block {
+        flex-direction: column-reverse;
+    }
+
+    .about-block-left, .about-block-right {
+        flex-basis: 100%;
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+
+    .posibilities-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .tech-block {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .tech-block-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+
+    .download-block {
+        flex-direction: column-reverse;
+    }
+
+    .download-block-left, .download-block-right {
+        flex-basis: 100%;
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+
+    .download-app {
+        justify-content: center;
+    }
+
+    .contact-block {
+        flex-direction: column;
+    }
+
+    .contact-block-left, .contact-block-right {
+        flex-basis: 100%;
+        margin: 0 0 2rem 0;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-block-right input[type="submit"] {
+        align-self: center;
+    }
+}
+
+@media (max-width:600px) {
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header-content h2 {
+        font-size: 1.125rem;
+    }
+
+    .header-top {
+        margin-bottom: 100px;
+    }
+
+    .about-block-left h2, .download-block-left h2, .contact-block-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .posibilities-wrap h2, .tech-wrap h2 {
+        font-size: 1.875rem;
+    }
+
+    .tech-block {
+        flex-direction: column;
+    }
+
+    .tech-block-item {
+        max-width: 200px;
+        align-self: center;
+    }
+}
+
+@media (max-width:375px)
+{
+    .header-content h1 {
+        font-size: 2rem;
+    }
 }
