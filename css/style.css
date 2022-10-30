@@ -316,3 +316,64 @@ a:hover {
     margin-right: 23px;
 }
 
+.contact-wrap {
+    padding: 94px 0;
+}
+
+.contact-block {
+    display: flex;
+    align-items: center;
+}
+
+.contact-block-left {
+    margin-right: 8%;
+    flex-basis: 42%;
+}
+
+.contact-block-right {
+    flex-basis: 50%;
+}
+
+.contact-block-left h2 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+}
+
+.contact-block-left p {
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.contact-block-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-block-right input[type="submit"] {
+    display: block;
+    padding: 17px 40px;
+    align-self: flex-start;
+    color: white;
+    background: #ED4C5C;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+
+.contact-block-right input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+.form-input {
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 20px 30px;
+    color: rgba(19, 39, 67, 0.5);
+    margin-bottom: 24px;
+    outline: none;
+}
